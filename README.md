@@ -17,3 +17,7 @@ Figure: Spring Batch Architecture
 ![Alt text](./images/batch1.jpg?raw=true "batch1")
 
 ![Alt text](./images/batch2.jpg?raw=true "batch1")
+
+References:
+- [Spring Batch Tutorial: Batch Processing Made Easy with Spring](https://www.toptal.com/spring/spring-batch-tutorial)
+- [Spring Boot With Spring Batch](https://www.baeldung.com/spring-boot-spring-batch)
