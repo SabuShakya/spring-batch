@@ -2,6 +2,9 @@ package com.sabu.springbatch.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * @author Sabu Shakya
@@ -10,13 +13,17 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class Coffee {
+@ToString
+public class Coffee implements Serializable {
 
     private String brand;
 
     private String origin;
 
     private String characteristics;
+
+    public Coffee() {
+    }
 
     public Coffee(String brand, String origin, String characteristics) {
         this.brand = brand;
