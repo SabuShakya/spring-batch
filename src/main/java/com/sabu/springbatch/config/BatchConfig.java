@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.sql.DataSource;
 
@@ -27,6 +28,7 @@ import javax.sql.DataSource;
  * @email <sabu.shakya@f1soft.com>
  * @createdDate 2021/07/27
  */
+@EnableScheduling
 @Configuration
 public class BatchConfig {
 
@@ -67,7 +69,7 @@ public class BatchConfig {
     }
 
     @Bean
-    public Job importUserJob(JobCompletionNotificationListener listener, Step step1) {
+    public Job importCoffeeJob(JobCompletionNotificationListener listener, Step step1) {
         return jobBuilderFactory.get("importUserJob")
                 .incrementer(new RunIdIncrementer())
                 .listener(listener)
