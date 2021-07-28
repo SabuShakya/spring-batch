@@ -21,3 +21,5 @@ Figure: Spring Batch Architecture
 References:
 - [Spring Batch Tutorial: Batch Processing Made Easy with Spring](https://www.toptal.com/spring/spring-batch-tutorial)
 - [Spring Boot With Spring Batch](https://www.baeldung.com/spring-boot-spring-batch)
+
+For scheduled job trigger : checkout scheduled-job branch
